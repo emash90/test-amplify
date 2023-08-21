@@ -1,0 +1,91 @@
+{
+  "auth": {
+    "testamplify602ad1c1": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testamplify602ad1c1CustomMessage",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "NAME",
+          "PICTURE"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "testamplify602ad1c1CustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_testamplify602ad1c1CustomMessage_EMAILMESSAGE": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify602ad1c1CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testamplify602ad1c1CustomMessage_EMAILSUBJECT": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify602ad1c1CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testamplify602ad1c1CustomMessage_REDIRECTURL": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify602ad1c1CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testamplify602ad1c1CustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify602ad1c1CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testamplify602ad1c1CustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testamplify602ad1c1CustomMessage"
+        }
+      ]
+    }
+  }
+}

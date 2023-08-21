@@ -1,0 +1,30 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify6f02dc37975d4-staging-124041-authRole",
+      "UnauthRoleArn": "arn:aws:iam::255287995451:role/amplify-amplify6f02dc37975d4-staging-124041-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::255287995451:role/amplify-amplify6f02dc37975d4-staging-124041-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify6f02dc37975d4-staging-124041-deployment",
+      "UnauthRoleName": "amplify-amplify6f02dc37975d4-staging-124041-unauthRole",
+      "StackName": "amplify-amplify6f02dc37975d4-staging-124041",
+      "StackId": "arn:aws:cloudformation:us-east-1:255287995451:stack/amplify-amplify6f02dc37975d4-staging-124041/f0ac4690-401f-11ee-991e-0ae0d270e345",
+      "AmplifyAppId": "dldnnrmba1n38",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-amplify6f02dc37975d4-staging-124041-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "testamplify602ad1c1": {}
+      },
+      "function": {
+        "testamplify602ad1c1CustomMessage": {
+          "REDIRECTURL": "https://main.dldnnrmba1n38.amplifyapp.com/",
+          "EMAILSUBJECT": "confirm email",
+          "EMAILMESSAGE": "click link below to confirm your email address",
+          "deploymentBucketName": "amplify-amplify6f02dc37975d4-staging-124041-deployment",
+          "s3Key": "amplify-builds/testamplify602ad1c1CustomMessage-616c6e6c47546b41524f-build.zip"
+        }
+      }
+    }
+  }
+}
